@@ -1,0 +1,9 @@
+__*
+bin
+lib
+include
+lib64
+nodemodules
+package-lock.json
+package.json
+pyvenv.cfg
