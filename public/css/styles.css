@@ -71,8 +71,11 @@ form button:hover {
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
+    border-color: #14273a;
+    border-width: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    position: relative;
 }
 
 #messagesList li:hover {
@@ -89,6 +92,43 @@ form button:hover {
     font-size: 12px;
     color: #bdc3c7;
     margin-top: 10px;
+}
+
+button.likeButton {
+    background: #1d2e3f;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button.likeButton:hover {
+    background: #243947;
+}
+
+button.likeButton:disabled {
+    background: transparent;
+    cursor: not-allowed;
+}
+
+button.replyButton {
+    background: #0a9b44;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+button.replyButton:hover {
+    background: #0b6430;
 }
 
 .reply-form {
